@@ -1,0 +1,23 @@
+body {
+  background-color: rgb(20, 20, 20);
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+#wrapper {
+  height: 100vh;
+  width: 100vw;
+
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-template-rows: repeat(var(--rows), 1fr);
+}
+
+.tile {
+  border: 1px solid white;
+}
+
+.selected {
+  background-color: lightgreen;
+}
